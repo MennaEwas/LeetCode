@@ -4,12 +4,10 @@ class NumArray:
         self.nums = nums 
         
     def sumRange(self, left: int, right: int) -> int:
-        i = left 
-        n = right
         summ = 0
-        while i <= n:
-            summ += self.nums[i]
-            i+= 1 
+        while left <= right:
+            summ += self.nums[left]
+            left+= 1 
         return summ
 
 
