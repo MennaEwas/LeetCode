@@ -1,0 +1,43 @@
+# import requests
+# import mysql.connector
+# import pandas as pd
+
+class NodeList():
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+        self.prev = None
+        
+class List():
+    def __init__(self):
+        self.head = None
+        
+    def insert_h(self, vl):
+        node = NodeList(data = vl)
+        node.next = self.head
+        
+        if self.head is not None:
+            self.head.prev = node
+        else:
+            self.head = node 
+        
+    def insert_t(self, val):
+        #create a new node 
+        node = NodeList(data = val)        
+        #Storing the original head 
+        last = self.head 
+        
+        #Empty list
+        if self.head is None:
+            node.prev = None
+            self.head = node
+            return     
+            
+        #reach the last node in the current list 
+        while last.next is not None:
+            last = last.next
+        
+        last.next = node
+        node.prev = last 
+        
+       
