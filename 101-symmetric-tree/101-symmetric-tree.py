@@ -11,4 +11,4 @@ class Solution:
                 return True
             if a and b and a.val == b.val:
                 return is_mirror(a.left, b.right) and is_mirror(a.right, b.left)
-        return not root or is_mirror(root.right, root.left)
+        return not root or is_mirror(root.left, root.right)
