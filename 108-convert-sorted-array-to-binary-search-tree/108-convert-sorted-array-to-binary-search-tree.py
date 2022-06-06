@@ -11,8 +11,9 @@ class Solution:
                 return None
             md = (l + r) // 2
             first = TreeNode(val = nums[md])
-            first.left = dfs(l, md - 1)
             first.right = dfs(md + 1, r)
+            first.left = dfs(l, md - 1)
+            
             return first
         return dfs(0, len(nums) - 1)
         
