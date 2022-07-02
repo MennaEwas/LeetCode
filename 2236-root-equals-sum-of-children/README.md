@@ -5,19 +5,19 @@
 <p style="user-select: auto;">&nbsp;</p>
 <p style="user-select: auto;"><strong style="user-select: auto;">Example 1:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2022/04/08/graph3drawio.png" style="width: 281px; height: 199px; user-select: auto;">
-<pre style="position: relative; user-select: auto;"><strong style="user-select: auto;">Input:</strong> root = [10,4,6]
+<pre style="user-select: auto;"><strong style="user-select: auto;">Input:</strong> root = [10,4,6]
 <strong style="user-select: auto;">Output:</strong> true
 <strong style="user-select: auto;">Explanation:</strong> The values of the root, its left child, and its right child are 10, 4, and 6, respectively.
 10 is equal to 4 + 6, so we return true.
-<div class="open_grepper_editor" title="Edit &amp; Save To Grepper" style="user-select: auto;"></div></pre>
+</pre>
 
 <p style="user-select: auto;"><strong style="user-select: auto;">Example 2:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2022/04/08/graph3drawio-1.png" style="width: 281px; height: 199px; user-select: auto;">
-<pre style="position: relative; user-select: auto;"><strong style="user-select: auto;">Input:</strong> root = [5,3,1]
+<pre style="user-select: auto;"><strong style="user-select: auto;">Input:</strong> root = [5,3,1]
 <strong style="user-select: auto;">Output:</strong> false
 <strong style="user-select: auto;">Explanation:</strong> The values of the root, its left child, and its right child are 5, 3, and 1, respectively.
 5 is not equal to 3 + 1, so we return false.
-<div class="open_grepper_editor" title="Edit &amp; Save To Grepper" style="user-select: auto;"></div></pre>
+</pre>
 
 <p style="user-select: auto;">&nbsp;</p>
 <p style="user-select: auto;"><strong style="user-select: auto;">Constraints:</strong></p>
