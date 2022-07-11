@@ -1,7 +1,13 @@
 class Solution:
     def isPowerOfTwo(self, n: int) -> bool:
-        if n > 0:
-            return bin(n).count('1') == 1
+        #base case 
+        if n < 0:
+            return False
+        if n == 1 or n ==2:
+            return True
+        elif n > 2:
+            n = n / 2
+            return self.isPowerOfTwo(n)
         else:
             return False
         
