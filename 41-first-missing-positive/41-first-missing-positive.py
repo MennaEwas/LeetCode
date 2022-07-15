@@ -5,7 +5,6 @@ class Solution:
             if i not in d:
                 d[i] = 1
                 
-        #print(d)
         a = 1        
         while True:
             v = d.get(a, -1)
