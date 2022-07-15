@@ -7,6 +7,8 @@ class Solution:
                 
         #print(d)
         a = 1
+        k = list(d.keys())
+        
         while True:
             v = d.get(a, -1)
             if v == -1: #not here 
