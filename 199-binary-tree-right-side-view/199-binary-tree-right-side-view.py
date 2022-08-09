@@ -8,17 +8,20 @@ class Solution:
     def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
         result = []
         if root is None:
-            return result
+            return
 
         queue = deque()
         queue.append(root)
         while queue:
             levelSize = len(queue)
+            count = 0 
             # connect all nodes of this level
-            for i in range(0, levelSize):
+            for _ in range(levelSize):
                 currentNode = queue.popleft()
-                if i == levelSize - 1:
+                count += 1 
+                if count == levelSize:
                     result.append(currentNode.val)
+
                 # insert the children of current node in the queue
                 if currentNode.left:
                     queue.append(currentNode.left)
