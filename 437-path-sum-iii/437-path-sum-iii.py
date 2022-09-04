@@ -6,18 +6,19 @@
 #         self.right = right
 class Solution:
     def pathSum(self, root: Optional[TreeNode], targetSum: int) -> int:
-        def find_path_recursive(current, S, currentq):
-            if not current: 
-                return 0
-            summ, count = 0, 0
-            currentq.append(current.val)
-            #for loop 
-            for i in range(len(currentq)-1, -1, -1):
-                summ += currentq[i]
-                if summ == S:
-                    count += 1  
-            count += find_path_recursive(current.left, S, currentq)
-            count += find_path_recursive(current.right, S,  currentq) 
-            del currentq[-1]
-            return count
-        return find_path_recursive(root, targetSum, [])
+        self.total = 0 
+        def helper(node, cur):
+            if not node:
+                return 
+            helper(node.right, cur + node.val)
+            helper(node.left, cur + node.val)
+            if cur + node.val == targetSum: self.total += 1
+        def dfs(node):
+            if not node: return
+            helper(node, 0)
+            dfs(node.left)
+            dfs(node.right)
+        dfs(root)
+        return self.total
+        
+            
