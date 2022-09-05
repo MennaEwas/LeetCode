@@ -1,0 +1,27 @@
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        new = sorted(nums)
+        i = 0
+        j = len(nums) - 1
+        ls = []
+        while j > i:
+            l = new[i]
+            m = new[j]
+            k = l + m 
+            if k == target:
+                ls.append(nums.index(l))
+                nums[nums.index(l)] = '_'
+                ls.append(nums.index(m))
+                return ls
+            else: 
+                if k > target:
+                    j-=1 
+                else:
+                    i+=1
+                
+                    
+                    
+                        
+            
+        
+        
