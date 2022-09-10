@@ -22,7 +22,8 @@ class Solution:
             if i > 0 and arr[i] == arr[i-1]:  # skip same element to avoid duplicate triplets
                 continue
             self.search_pair(arr, -arr[i], i+1, triplets)
-
+        
+        
         return triplets
 
 
