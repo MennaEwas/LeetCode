@@ -6,11 +6,12 @@ class Solution:
                 return True
             return False
         
-        for i in range(len(arr)):
-            for j in range(i + 1, len(arr)):
-                for k in range(j + 1, len(arr)):
-                    if good(arr[i], arr[j], a) and good(arr[j], arr[k], b) and good(arr[k], arr[i], c):
-                        count += 1
+        for i in range(len(arr) - 2):
+            for j in range(i + 1, len(arr) - 1):
+                if good(arr[i], arr[j], a):
+                    for k in range(j + 1, len(arr)):
+                        if good(arr[j], arr[k], b) and good(arr[k], arr[i], c):
+                            count += 1
         
         return count
             
