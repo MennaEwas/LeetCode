@@ -20,3 +20,20 @@ https://leetcode.com/problems/employee-free-time/
 https://leetcode.com/problems/find-all-duplicates-in-an-array/submissions/
 https://leetcode.com/problems/kth-missing-positive-number/
 https://leetcode.com/problems/kth-missing-positive-number/
+
+#Reverse LinkedList 
+https://leetcode.com/problems/reverse-linked-list-ii/
+https://leetcode.com/problems/reverse-nodes-in-k-group/
+
+#Heaps
+https://leetcode.com/problems/find-median-from-data-stream/
+https://leetcode.com/problems/sliding-window-median/
+https://leetcode.com/problems/ipo/
+https://www.youtube.com/watch?v=e7ZYZmGImSE&ab_channel=ImranSarwar
+https://leetcode.com/problems/find-right-interval/
+
+#Subset 
+https://leetcode.com/problems/subsets/
+https://leetcode.com/problems/subsets-ii/
+
+
