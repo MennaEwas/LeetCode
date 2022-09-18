@@ -1,6 +1,0 @@
-To Generate list of chars with numbers
-characters = {}
-for character in string.ascii.lowercase:
-    characters[character] = 0
-    
-dict = {chr(ord('a') + i) : chr(ord('a') + i) for i in range(26)}
