@@ -16,7 +16,7 @@
 <p style="user-select: auto;">&nbsp;</p>
 <p style="user-select: auto;"><strong style="user-select: auto;">Example 1:</strong></p>
 
-<pre style="user-select: auto;"><strong style="user-select: auto;">Input</strong>
+<pre style="position: relative; user-select: auto;"><strong style="user-select: auto;">Input</strong>
 ["MedianFinder", "addNum", "addNum", "findMedian", "addNum", "findMedian"]
 [[], [1], [2], [], [3], []]
 <strong style="user-select: auto;">Output</strong>
@@ -29,7 +29,7 @@ medianFinder.addNum(2);    // arr = [1, 2]
 medianFinder.findMedian(); // return 1.5 (i.e., (1 + 2) / 2)
 medianFinder.addNum(3);    // arr[1, 2, 3]
 medianFinder.findMedian(); // return 2.0
-</pre>
+<div class="open_grepper_editor" title="Edit &amp; Save To Grepper" style="user-select: auto;"></div></pre>
 
 <p style="user-select: auto;">&nbsp;</p>
 <p style="user-select: auto;"><strong style="user-select: auto;">Constraints:</strong></p>
