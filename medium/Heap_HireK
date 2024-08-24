@@ -1,0 +1,34 @@
+class Solution:
+    def totalCost(self, costs: List[int], k: int, candidates: int) -> int:
+        heap = []
+        left = 0
+
+        for i, v in enumerate(costs):
+            if len(heap) < candidates:
+                heap.append([costs[i], i])
+                left = i
+        
+        
+        right = len(costs)
+        while  right > left + 1 and len(heap) < candidates * 2:
+            right -= 1 
+            heap.append([costs[right], right])
+        
+        res = 0 
+        heapify(heap)
+
+        while k:
+            cost, index = heappop(heap)
+            res += cost 
+            k -= 1
+            if index <= left:
+                if left + 1 < right:
+                    left += 1
+                    heappush(heap,[costs[left], left])
+            elif index >= right:
+                if right - 1 > left:
+                    right -= 1
+                    heappush(heap, [costs[right], right])
+
+
+        return res
