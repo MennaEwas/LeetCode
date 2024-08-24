@@ -1,0 +1,16 @@
+class Solution:
+    def numTilings(self, n: int) -> int:
+        num = {}
+        md = 1e9 
+        md += 7
+        num[0] = 0
+        num[1] = 1
+        num[2] = 2
+        num[3] = 5
+        if n <= 3:
+            return num[n]
+        for i in range(4, n+1):
+            num[i] = 2*num[i-1] + num[i-3]
+            num[i]%=md
+        return int(num[n])
+        
